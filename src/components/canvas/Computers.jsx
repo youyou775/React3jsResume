@@ -1,29 +1,76 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF, useHelper } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import { PointLight, PointLightHelper, SpotLightHelper } from "three";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./testModel/scene.gltf");
+  //camera
+  const cameraRef = useRef();
+  const {
+    camera,
+    gl: { domElement },
+  } = useThree();
+
+  useEffect(() => {
+    camera.position.set(-1.77, 0.8, -4.16);
+    camera.rotation.set(-2.97, -0.45, -3.06);
+    cameraRef.current = camera;
+    // console.log("Camera", cameraRef.current.position);
+  }, [camera]);
+
+  useFrame((state) => {
+    console.log(state.camera.position);
+    console.log(state.camera.rotation);
+  }, []);
+  //lights
+  const pointLight = useRef();
+  // useHelper(pointLight, PointLightHelper, 0.1, "green");
+
+  const spotLight = useRef();
+  // useHelper(spotLight, SpotLightHelper, 0.1, "red");
+
   return (
-    <mesh>
-      <hemisphereLight intensity={1} groundColor="black" />
-      <pointLight intensity={2} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+    <>
+      <OrbitControls
+        enableZoom={false}
+        maxPolarAngle={Math.PI / 2}
+        minPolarAngle={Math.PI / 2}
+        ref={cameraRef}
+        // target={[0, 0, 0]}
+        args={[camera, domElement]}
+        onUpdate={() => {
+          console.log(cameraRef.current?.position);
+        }}
       />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
+      <mesh>
+        <hemisphereLight intensity={1} groundColor="black" />
+        <pointLight intensity={1} position={[1.2, -0.5, -2]} ref={pointLight} />
+        <spotLight
+          position={[0, -0.35, -2]}
+          angle={0.5}
+          penumbra={1}
+          intensity={60}
+          castShadow
+          shadow-mapSize={1024}
+          distance={2.5}
+          ref={spotLight}
+        />
+        <primitive
+          object={computer.scene}
+          scale={isMobile ? 1 : 1}
+          position={isMobile ? [0, -0.75, 0] : [0, -0.75, 0]}
+          rotation={[0, 0, 0]}
+        />
+        <ambientLight intensity={3} />
+        {/*  helpers  */}
+        {/* <axesHelper args={[5]} /> */}
+        {/* <PointLightHelper
+        // light={pointLight}
+        /> */}
+      </mesh>
+    </>
   );
 };
 
@@ -47,16 +94,11 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [0, 20, 7], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       {/* <ambientLight intensity={1} /> */}
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
         <Computers isMobile={isMobile} />
       </Suspense>
       <Preload />
