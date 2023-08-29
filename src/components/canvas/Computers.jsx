@@ -5,7 +5,7 @@ import CanvasLoader from "../Loader";
 import { PointLight, PointLightHelper, SpotLightHelper } from "three";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./testModel/scene.gltf");
+  const computer = useGLTF("./imac/scene.gltf");
   //camera
   const cameraRef = useRef();
   const {
@@ -41,7 +41,7 @@ const Computers = ({ isMobile }) => {
         // target={[0, 0, 0]}
         args={[camera, domElement]}
         onUpdate={() => {
-          console.log(cameraRef.current?.position);
+          // console.log(cameraRef.current?.position);
         }}
       />
       <mesh>
