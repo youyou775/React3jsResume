@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} `}>
             Hi, I'm <span>Youssef </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 `}>
+          <p className={`${styles.heroSubText}  mt-2 `}>
             I develop 3d visual user
             <br className="sm:block hidden" /> interfaces and web applications.
           </p>
@@ -31,7 +31,7 @@ const Hero = () => {
       >
         <a href="#about">
           <div
-            className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex 
+            className="w-[35px] h-[64px] rounded-3xl border-4 border-primary-text flex 
           justify-center items-start p-2"
           >
             <motion.div
@@ -41,7 +41,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3  rounded-full bg-secondary mb-1"
+              className="w-3 h-3  rounded-full bg-primary-text mb-1"
             />
           </div>
         </a>

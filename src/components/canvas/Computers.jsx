@@ -21,8 +21,8 @@ const Computers = ({ isMobile }) => {
   }, [camera]);
 
   useFrame((state) => {
-    console.log(state.camera.position);
-    console.log(state.camera.rotation);
+    // console.log(state.camera.position);
+    // console.log(state.camera.rotation);
   }, []);
   //lights
   const pointLight = useRef();
@@ -35,6 +35,7 @@ const Computers = ({ isMobile }) => {
     <>
       <OrbitControls
         enableZoom={false}
+        enablePan={false}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
         ref={cameraRef}

@@ -21,7 +21,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-primary-text text-[18px] font-normal cursor-pointer flex">
+          <p className="text-primary-text text-[18px] font-semibold cursor-pointer flex">
             Abouelghar &nbsp;
             <span className="sm:block hidden">| Computational Designer</span>
           </p>
