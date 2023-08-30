@@ -25,10 +25,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import conix from "./company/conix.png";
+import yfa from "./company/yfa.png";
+import modernAcademy from "./company/modernAcademy.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import conixAi from "./conixAi.png";
+import zebra from "./zebra.png";
+
 
 export {
   logo,
@@ -59,4 +65,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  conix,
+  yfa,
+  modernAcademy,
+  conixAi,
+  zebra
 };

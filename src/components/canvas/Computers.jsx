@@ -65,11 +65,9 @@ const Computers = ({ isMobile }) => {
           rotation={[0, 0, 0]}
         />
         <ambientLight intensity={3} />
-        {/*  helpers  */}
-        {/* <axesHelper args={[5]} /> */}
-        {/* <PointLightHelper
-        // light={pointLight}
-        /> */}
+
+        {/* <axesHelper args={[5]} />
+        <PointLightHelper light={pointLight} /> */}
       </mesh>
     </>
   );

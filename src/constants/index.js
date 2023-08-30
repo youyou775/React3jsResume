@@ -23,6 +23,11 @@ import {
     jobit,
     tripguide,
     threejs,
+    conix,
+    yfa,
+    modernAcademy,
+    conixAi,
+    zebra
   } from "../assets";
   
   export const navLinks = [
@@ -42,11 +47,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "3D Designer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React/Angular Developer",
       icon: mobile,
     },
     {
@@ -54,7 +59,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Content/Graphic Designer",
       icon: creator,
     },
   ];
@@ -80,10 +85,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -108,63 +113,57 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Senior Computational Designer/Full Stack Developer",
+      company_name: "CONIX.AI",
+      icon: conix,
+      iconBg: "#fff",
+      date: "July 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "switched to Angular/React and Node.js to improve scalability, increasing deployment efficiency by 50%.",
+        "Managed DevOps through GoDaddy then Cloudflare, reducing costs by 33%.",
+        "Wrote database using MYSQL migrating from MSSQL.",
+        "Secured $1.2 million in funding and reduced design time over 90% through AI development.",
+        "Deployed our stack on AWS, serving over 1000 users.",
+        "Currently managing a team of computational designers and developers.",
+        "The full result is at WWW.conix.ai (you can operate the AI).",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Computational Designer/Full Stack Developer",
+      company_name: "YUSUF FAHMY ARCHITECTS (YFA)",
+      icon: yfa,
+      iconBg: "#fff",
+      date: "July 2017 - June 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked in startup environment.",
+        "Developed custom tools in C# and .NET, combining architecture and coding for innovative solutions.",
+        " Designed algorithms in Java and Processing to automate 3D modeling.",
+        "Built physics engines from scratch using C# and Grasshopper.",
+        "Created and maintained company website using JS and ASP.NET.",
+        "Wrote database using MSSQL.",
+        "Built physics engines from scratch using C# and Grasshopper.",
+        "Incorporated PHP and React for our web design.",
+        "Secured first enterprise client seed round to found startup Conix.AI.",
+        "Deployed on Digital Ocean cutting costs by 20%.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Bachelor's Degree in Architecture",
+      company_name: "MODERN ACADEMY",
+      icon: modernAcademy,
+      iconBg: "#fff",
+      date: "September 2011 -June 2017",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Graduated with B+ average (above 80%). Demonstrated creative computational design skills.",
+        "Conducted innovative research and implemented new  systems. Developed concepts using beginner C++.",
       ],
     },
   ];
@@ -172,94 +171,106 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I thought it was impossible to make a website as beautiful as our product, but Youssef proved me wrong.",
+      name: "Yusuf Fahmy",
+      designation: "CEO",
+      company: "Conix.AI",
+      image: "https://randomuser.me/api/portraits/men/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "I've never met a web developer who truly cares about their clients' success like Youssef does.",
+      name: "Mohamed Hamdy",
+      designation: "Product",
+      company: "Conix.AI",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "After Youssef optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      name: "Tamer Ramadan",
+      designation: "TA",
+      company: "Modern Academy",
+      image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Conix AI",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Revolutionize the architecture industry by seamlessly integrating Artificial Intelligence into the design process, creating sustainable and innovative designs.",
       tags: [
         {
-          name: "react",
+          name: "Angular",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "MySQL",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "NodeJS",
           color: "pink-text-gradient",
         },
+        {
+          name: "REST API",
+          color: "green-text-gradient",
+        },
+        {
+          name: "AWS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "JAvascript/TypeScript",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: conixAi,
+      source_code_link: "https://www.conix.ai/",
     },
     {
-      name: "Job IT",
+      name: "Zebra",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Zebra is a C# grasshopper plugin, developed by YFA team when a need came for an agent based design plugin.",
       tags: [
         {
-          name: "react",
+          name: ".NET",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Grasshopper",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: zebra,
+      source_code_link: "https://www.food4rhino.com/en/app/zebra",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
