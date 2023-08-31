@@ -21,19 +21,19 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
 import conix from "./company/conix.png";
 import yfa from "./company/yfa.png";
 import modernAcademy from "./company/modernAcademy.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 import conixAi from "./conixAi.png";
 import zebra from "./zebra.png";
+import aditheyogi from "./aditheyogi.png"
+
+import yusuf from "./testimonials/yusuf.jpg"
+import hamdy from "./testimonials/hamdy.jpeg"
+import tamer from "./testimonials/tamer.jpg"
 
 
 export {
@@ -58,16 +58,15 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+ 
+ 
   conix,
   yfa,
   modernAcademy,
   conixAi,
-  zebra
+  zebra,
+  aditheyogi,
+  yusuf, 
+  hamdy,
+  tamer
 };

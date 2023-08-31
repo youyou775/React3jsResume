@@ -15,19 +15,16 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     conix,
     yfa,
     modernAcademy,
     conixAi,
-    zebra
+    zebra,
+    aditheyogi,
+    yusuf,
+    hamdy, 
+    tamer
   } from "../assets";
   
   export const navLinks = [
@@ -175,23 +172,23 @@ import {
       name: "Yusuf Fahmy",
       designation: "CEO",
       company: "Conix.AI",
-      image: "https://randomuser.me/api/portraits/men/4.jpg",
+      image: yusuf,
     },
     {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Youssef does.",
       name: "Mohamed Hamdy",
-      designation: "Product",
+      designation: "Product Manager",
       company: "Conix.AI",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      image: hamdy,
     },
     {
       testimonial:
         "After Youssef optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Tamer Ramadan",
-      designation: "TA",
-      company: "Modern Academy",
-      image: "https://randomuser.me/api/portraits/men/6.jpg",
+      designation: "Ceo ",
+      company: " Alg-Architects",
+      image: tamer,
     },
   ];
   
@@ -199,7 +196,7 @@ import {
     {
       name: "Conix AI",
       description:
-        "Revolutionize the architecture industry by seamlessly integrating Artificial Intelligence into the design process, creating sustainable and innovative designs.",
+        "Integrating Artificial Intelligence into the design process, creating sustainable and innovative designs.",
       tags: [
         {
           name: "Angular",
@@ -213,18 +210,7 @@ import {
           name: "NodeJS",
           color: "pink-text-gradient",
         },
-        {
-          name: "REST API",
-          color: "green-text-gradient",
-        },
-        {
-          name: "AWS",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "JAvascript/TypeScript",
-          color: "blue-text-gradient",
-        },
+
       ],
       image: conixAi,
       source_code_link: "https://www.conix.ai/",
@@ -250,27 +236,31 @@ import {
       image: zebra,
       source_code_link: "https://www.food4rhino.com/en/app/zebra",
     },
-    // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "Adi the yogi",
+      description:
+        "A small website designed from sratch as a way of marketing for a yoga teacher. using react and php .",
+      tags: [
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "php",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: aditheyogi,
+      source_code_link: "http://aditheyogi.rf.gd/",
+    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
