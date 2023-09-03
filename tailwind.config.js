@@ -13,7 +13,7 @@ module.exports = {
         "white-100": "#f3f3f3",
         "primary-text": "#707070",
         "secondary-text": "#000000",
-        "hover": "#515050"
+        hover: "#515050",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

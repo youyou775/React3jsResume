@@ -1,13 +1,13 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.esm";
+import { inSphere } from "maath/random";
 
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
     //number needs to be divisible by 3 cuz it gets randomized x, y, z
-    random.inSphere(new Float32Array(5001), { radius: 1.2 })
+    inSphere(new Float32Array(5001), { radius: 1.2 })
   );
 
   useFrame((state, delta) => {
@@ -20,8 +20,8 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#f272c8"
-          size={0.002}
+          color="#000000"
+          size={0.005}
           sizeAttenuation={true}
           depthWrite={false}
         />
