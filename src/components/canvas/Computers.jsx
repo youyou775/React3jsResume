@@ -14,9 +14,9 @@ const Computers = ({ isMobile }) => {
   } = useThree();
 
   useEffect(() => {
-    camera.position.set(-1.77, 0.8, -4.16);
-    camera.rotation.set(-2.97, -0.45, -3.06);
-    cameraRef.current = camera;
+    // camera.position.set(-1.77, 0.8, -4.16);
+    // camera.rotation.set(-2.97, -0.45, -3.06);
+    // cameraRef.current = camera;
     // console.log("Camera", cameraRef.current.position);
   }, [camera]);
 
@@ -60,8 +60,8 @@ const Computers = ({ isMobile }) => {
         />
         <primitive
           object={computer.scene}
-          scale={isMobile ? 1 : 1}
-          position={isMobile ? [0, -0.75, 0] : [0, -0.75, 0]}
+          scale={isMobile ? 0.75 : 1}
+          position={isMobile ? [0, -0.4, 0] : [0, -0.75, 0]}
           rotation={[0, 0, 0]}
         />
         <ambientLight intensity={3} />
@@ -93,7 +93,11 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [0, 20, 7], fov: 25 }}
+      camera={{
+        position: [-1.77, 0.8, -4.16],
+        rotation: [-2.97, -0.45, -3.06],
+        fov: 25,
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       {/* <ambientLight intensity={1} /> */}
