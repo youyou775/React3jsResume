@@ -7,6 +7,7 @@ import github from "./github.png";
 import www from "./www.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import linkedin from "../assets/linkedin.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -22,20 +23,19 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-
 import conix from "./company/conix.png";
 import yfa from "./company/yfa.png";
 import modernAcademy from "./company/modernAcademy.png";
 
-
 import conixAi from "./conixAi.png";
 import zebra from "./zebra.png";
-import aditheyogi from "./aditheyogi.png"
+import aditheyogi from "./aditheyogi.png";
 
-import yusuf from "./testimonials/yusuf.jpg"
-import hamdy from "./testimonials/hamdy.jpeg"
-import tamer from "./testimonials/tamer.jpg"
+import yusuf from "./testimonials/yusuf.jpg";
+import hamdy from "./testimonials/hamdy.jpeg";
+import tamer from "./testimonials/tamer.jpg";
 
+import cv from ".//Youssef-Abou-El-Ghar-CV-08.pdf";
 
 export {
   logo,
@@ -47,6 +47,7 @@ export {
   github,
   menu,
   close,
+  linkedin,
   css,
   docker,
   figma,
@@ -60,15 +61,14 @@ export {
   tailwind,
   typescript,
   threejs,
- 
- 
   conix,
   yfa,
   modernAcademy,
   conixAi,
   zebra,
   aditheyogi,
-  yusuf, 
+  yusuf,
   hamdy,
-  tamer
+  tamer,
+  cv,
 };

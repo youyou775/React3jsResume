@@ -8,6 +8,7 @@ import {
   Hero,
   Navbar,
   Tech,
+  Download,
   Works,
   StarsCanvas,
 } from "./components";
@@ -24,6 +25,7 @@ function App() {
         </div>
         <About />
         <Experience />
+        {/* <Download /> */}
         <Tech />
         <Works />
         <Feedbacks />

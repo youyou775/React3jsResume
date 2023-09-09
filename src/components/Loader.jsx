@@ -27,26 +27,17 @@ const CanvasLoader = () => {
         </p>
       </div> */}
       <div className="flex justify-center items-center">
-        <div class="relative">
+        <div className="relative">
           <div
-            className="w-14 h-14 rounded-full absolute
-                            border-8 border-solid border-secondary
-                            flex justify-center items-center"
+            className="w-14 h-14 rounded-full absolute border-8 border-solid border-secondary 
+            flex justify-center items-center text-[14px] font-normal text-primary-text"
           >
-            <p
-              style={{
-                fontSize: 14,
-                color: "#000000",
-                fontWeight: 500,
-              }}
-            >
-              {progress.toFixed(0)}%
-            </p>
+            <p>{progress.toFixed(0)}%</p>
           </div>
 
           <div
-            className="w-14 h-14 rounded-full animate-spin absolute
-                            border-8 border-solid border-primary-text border-t-transparent shadow-md"
+            className="w-14 h-14 rounded-full animate-spin border-8 border-solid
+             border-primary-text border-t-transparent shadow-md"
           ></div>
         </div>
       </div>

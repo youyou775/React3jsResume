@@ -2,8 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, linkedin } from "../assets";
+import { ReactComponent as GithugSvg } from "../assets/tech/github.svg";
+import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
 
+const MenuIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill={props.fill}
+    className={props.class}
+  ></svg>
+);
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -26,22 +35,37 @@ const Navbar = () => {
             <span className="sm:block hidden">| Computational Designer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row  gap-10 ">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title
-                  ? "text-secondary-text"
-                  : "text-primary-text"
-              } hover:text-hover text-[18px] font-normal cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
+        <div className="ist-none hidden sm:flex flex-row gap-4">
+          <ul className="list-none hidden sm:flex flex-row  gap-8 ">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`${
+                  active === link.title
+                    ? "text-secondary-text"
+                    : "text-primary-text"
+                } hover:text-hover text-[18px] font-medium cursor-pointer`}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+          <ul className="list-none hidden sm:flex flex-row  gap-0 ">
+            <li className="gap-0">
+              <a href="https://github.com/youyou775/">
+                <GithugSvg className="text-primary-text hover:text-hover" />
+              </a>
             </li>
-          ))}
-        </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+            <li>
+              <a href="https://www.linkedin.com/in/youssef-abouelghar-a13066111/">
+                <Linkedin className="text-primary-text hover:text-hover" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="sm:hidden flex flex-1 justify-end items-center ">
           <img
             src={menu}
             alt="menu"

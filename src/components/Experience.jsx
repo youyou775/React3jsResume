@@ -9,6 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { Download } from "../components/";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -70,6 +71,7 @@ const Experience = () => {
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
+        <Download />
       </div>
     </>
   );
